@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Portfolio L<i class="fas fa-moon"></i>una</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a2e;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .success { background: #4caf50; }
+        .error { background: #f44336; }
+        .warning { background: #ff9800; }
+        .file-list {
+            background: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .file-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #333;
+        }
+        .file-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Debug - Portfolio L<i class="fas fa-moon"></i>una</h1>
+        
+        <div class="status success">
+            <h3><i class="fas fa-check"></i> Page de debug chargée avec succès</h3>
+        </div>
+        
+        <div class="file-list">
+            <h3><i class="fas fa-folder"></i> Fichiers présents sur Netlify :</h3>
+            <div class="file-item">index.html</div>
+            <div class="file-item">about.html</div>
+            <div class="file-item">projects.html</div>
+            <div class="file-item">nature.html</div>
+            <div class="file-item">contact.html</div>
+            <div class="file-item">assets/css/portfolio.css</div>
+            <div class="file-item">assets/js/main.js</div>
+            <div class="file-item">assets/images/ (8 photos)</div>
+        </div>
+        
+        <div class="status warning">
+            <h3><i class="fas fa-exclamation-triangle"></i> Tests de navigation</h3>
+            <p><a href="index.html" style="color: #fff;">Test page d'accueil</a></p>
+            <p><a href="about.html" style="color: #fff;">Test page à propos</a></p>
+            <p><a href="projects.html" style="color: #fff;">Test page projets</a></p>
+            <p><a href="nature.html" style="color: #fff;">Test page nature</a></p>
+            <p><a href="contact.html" style="color: #fff;">Test page contact</a></p>
+        </div>
+        
+        <div class="status">
+            <h3><i class="fas fa-info"></i> Informations de déploiement</h3>
+            <p>URL: https://loquacious-mooncake-2c99d3.netlify.app</p>
+            <p>Team: Luna Portfolio</p>
+            <p>Source: GitHub</p>
+            <p>Dernier déploiement: 0a25900</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="btn" style="background: #e94560; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px;">
+                <i class="fas fa-home"></i> Aller au portfolio
+            </a>
+        </div>
+    </div>
+</body>
+</html>
