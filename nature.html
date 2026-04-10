@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L<i class="fas fa-moon"></i>una - Nature</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/icon.jpeg" alt="L Icon" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                L<i class="fas fa-moon" style="font-size: 1.2rem; margin: 0 2px; color: var(--moon-gold);"></i>una
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projects.html" class="nav-link">Projets</a></li>
+                <li><a href="nature.html" class="nav-link active">Nature</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/images/collation.jpeg" alt="Photo de profil L" class="hero-avatar">
+            <h1>Galerie Nature</h1>
+            <p class="hero-tagline">Capturer la beauté de la nature à travers mon objectif</p>
+            <div class="hero-cta">
+                <a href="#gallery" class="btn btn-primary">
+                    <i class="fas fa-camera"></i>
+                    Explorer la Galerie
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Me Contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Galerie Photo Nature</h2>
+            <p class="section-subtitle fade-in-up">8 moments uniques capturés avec passion</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons fade-in-up">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="paysage">Paysage</button>
+                <button class="filter-btn" data-filter="ciel">Ciel</button>
+                <button class="filter-btn" data-filter="lumiere">Lumière</button>
+                <button class="filter-btn" data-filter="art">Art</button>
+                <button class="filter-btn" data-filter="inspiration">Inspiration</button>
+                <button class="filter-btn" data-filter="spiritualite">Spiritualité</button>
+                <button class="filter-btn" data-filter="vision">Vision</button>
+                <button class="filter-btn" data-filter="lunaire">Lunaire</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid fade-in-up">
+                <div class="gallery-item" data-category="paysage">
+                    <img src="assets/images/nature.jpeg" alt="Forêt Mystique">
+                    <div class="gallery-overlay">
+                        <h3>Forêt Mystique</h3>
+                        <p>Dans le silence de la forêt, chaque feuille murmure les secrets de la nature.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ciel">
+                    <img src="assets/images/ciel.jpeg" alt="Ciel Doré">
+                    <div class="gallery-overlay">
+                        <h3>Ciel Doré</h3>
+                        <p>Le ciel peint ses émotions avec les couleurs du couchant, promesse d'un nouveau matin.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="lumiere">
+                    <img src="assets/images/lumiere.jpeg" alt="Lumière Divine">
+                    <div class="gallery-overlay">
+                        <h3>Lumière Divine</h3>
+                        <p>La lumière traverse les nuages comme l'espoir traverse les épreuves, toujours victorieuse.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="art">
+                    <img src="assets/images/art.jpeg" alt="Art Créatif">
+                    <div class="gallery-overlay">
+                        <h3>Art Créatif</h3>
+                        <p>L'art est la manière dont l'âme communique ce que les mots ne peuvent exprimer.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="inspiration">
+                    <img src="assets/images/succes.jpeg" alt="Succès Éclatant">
+                    <div class="gallery-overlay">
+                        <h3>Succès Éclatant</h3>
+                        <p>Le succès n'est pas la destination, mais le voyage de transformation personnelle.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="spiritualite">
+                    <img src="assets/images/ame.jpeg" alt="Âme Profonde">
+                    <div class="gallery-overlay">
+                        <h3>Âme Profonde</h3>
+                        <p>L'âme réside dans les moments où le temps s'arrête et la beauté prend le dessus.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="vision">
+                    <img src="assets/images/fac.jpeg" alt="Vision Future">
+                    <div class="gallery-overlay">
+                        <h3>Vision Future</h3>
+                        <p>La vision est l'art de voir l'invisible et de croire à l'impossible.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="lunaire">
+                    <img src="assets/images/collation.jpeg" alt="Collation Lunaire">
+                    <div class="gallery-overlay">
+                        <h3>Collation Lunaire</h3>
+                        <p>Sous la lune, chaque moment devient une douce révélation de l'âme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1UqC4YAKZL/?mibextid=wwXIfr" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mangomaange?igsh=NHo4NnZhNzYxZGMz&utm_source=qr" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@angemangomaa" class="social-link" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://github.com" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:lunangedange@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 L<i class="fas fa-moon"></i>una - Portfolio Développeur & Nature. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

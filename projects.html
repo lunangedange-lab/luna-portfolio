@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L<i class="fas fa-moon"></i>una - Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/icon.jpeg" alt="L Icon" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                L<i class="fas fa-moon" style="font-size: 1.2rem; margin: 0 2px; color: var(--moon-gold);"></i>una
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projects.html" class="nav-link active">Projets</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/images/collation.jpeg" alt="Photo de profil L" class="hero-avatar">
+            <h1>Mes Projets</h1>
+            <p class="hero-tagline">Solutions innovantes et créatives développées avec passion</p>
+            <div class="hero-cta">
+                <a href="#gallery" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    Voir les Projets
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Me Contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Tous Mes Projets</h2>
+            <p class="section-subtitle fade-in-up">Découvrez mes réalisations techniques et créatives</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons fade-in-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="system">Système</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+                <button class="filter-btn" data-filter="creative">Créatif</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid fade-in-up">
+                <div class="project-card" data-category="web">
+                    <div class="project-symbol">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>G-Résilience Dashboard</h3>
+                        <p>Système complet de gestion PME avec dashboard analytique et interface moderne. Gestion des stocks, ventes, clients et reporting en temps réel.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-symbol">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SalaireMobile Dashboard</h3>
+                        <p>Application mobile de gestion des salaires avec interface responsive et intuitive. Calcul automatique des primes et gestion des employés.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material Design</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-mobile-alt"></i>
+                                Application
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="system">
+                    <div class="project-symbol">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion de Stock Terminal</h3>
+                        <p>Système terminal de gestion des stocks avec interface en ligne de commande. Gestion des entrées/sorties et inventaire automatisé.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Terminal</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-terminal"></i>
+                                Terminal
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-symbol">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Système Événementiel</h3>
+                        <p>Plateforme de gestion événementielle avec planning et suivi des participants. Réservation en ligne et gestion des ressources.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">FullCalendar</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-calendar"></i>
+                                Plateforme
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="data">
+                    <div class="project-symbol">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Analyse Excel</h3>
+                        <p>Projet d'analyse de données avec Excel et visualisations personnalisées. Tableaux croisés dynamiques et rapports automatisés.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">VBA</span>
+                            <span class="tech-tag">Power Pivot</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-excel"></i>
+                                Rapports
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-download"></i>
+                                Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-symbol">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio L<i class="fas fa-moon"></i>una</h3>
+                        <p>Portfolio personnel avec thème lunaire unique et design responsive. Déploiement automatique et sécurité intégrée.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="index.html" class="project-link">
+                                <i class="fas fa-home"></i>
+                                Accueil
+                            </a>
+                            <a href="https://github.com/lunangedange-lab/luna-portfolio" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1UqC4YAKZL/?mibextid=wwXIfr" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mangomaange?igsh=NHo4NnZhNzYxZGMz&utm_source=qr" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@angemangomaa" class="social-link" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://github.com" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:lunangedange@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 L<i class="fas fa-moon"></i>una - Portfolio Développeur & Nature. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
