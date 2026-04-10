@@ -1,0 +1,69 @@
+# Portfolio L<i class="fas fa-moon"></i>una - .gitignore
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers de configuration sensibles
+config/database.php
+config/security.php
+*.log
+
+# Logs
+logs/
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Cache
+cache/
+*.cache
+
+# Backups
+*.bak
+*.backup
+*.old
+
+# Fichiers d'exportation
+*.sql
+export_*
+
+# Fichiers de test
+*_test.php
+*_debug.php
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Node modules (si ajouté plus tard)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Upload directories (si ajouté plus tard)
+uploads/
+temp/
+
+# Documentation générée
+docs/_build/
+
+# Fichiers de compilation
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Fichiers de configuration spécifiques à l'environnement
+config/local.php
+config/production.php
