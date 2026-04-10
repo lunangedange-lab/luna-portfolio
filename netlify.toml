@@ -1,0 +1,81 @@
+# Configuration Netlify pour Luna Portfolio
+# Résout les problèmes 404 et configure le déploiement
+
+[build]
+  publish = "."
+  command = "echo 'No build command needed'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Configuration des redirections
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Redirections spécifiques pour les pages
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/projects.html"
+  status = 200
+
+[[redirects]]
+  from = "/nature"
+  to = "/nature.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/startup"
+  to = "/startup-landing.html"
+  status = 200
+
+# Redirections des fichiers PHP vers HTML
+[[redirects]]
+  from = "/*.php"
+  to = "/index.html"
+  status = 200
+
+# Headers pour la sécurité et le cache
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers pour les fichiers statiques
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Configuration du traitement des formulaires
+[forms]
+  contact = true

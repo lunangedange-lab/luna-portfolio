@@ -1,0 +1,15 @@
+# Fichier de redirection Netlify pour Luna Portfolio
+# Résout tous les problèmes 404
+
+# Redirection par défaut vers index.html
+/*    /index.html   200
+
+# Redirections spécifiques pour les pages
+/about    /about.html   200
+/projects  /projects.html  200
+/nature    /nature.html   200
+/contact   /contact.html  200
+/startup   /startup-landing.html   200
+
+# Redirections avec extensions .php vers .html
+/*.php    /index.html   200
