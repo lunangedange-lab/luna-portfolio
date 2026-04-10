@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L<i class="fas fa-moon"></i>una - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/icon.jpeg" alt="L Icon" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                L<i class="fas fa-moon" style="font-size: 1.2rem; margin: 0 2px; color: var(--moon-gold);"></i>una
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projects.html" class="nav-link">Projets</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/images/collation.jpeg" alt="Photo de profil L" class="hero-avatar">
+            <h1>Contactez-moi</h1>
+            <p class="hero-tagline">Discutons de vos projets et idées</p>
+            <div class="hero-cta">
+                <a href="#contact-form" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Envoyer un Message
+                </a>
+                <a href="tel:+243979294221" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Appeler
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact-form">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Contact</h2>
+            <p class="section-subtitle fade-in-up">Je suis disponible pour discuter de vos projets</p>
+            
+            <div class="contact-container fade-in-up">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localisation</h4>
+                            <p>Kinshasa, RD Congo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+243979294221">+243 979 294 221</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:lunangedange@gmail.com">lunangedange@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Réseaux Sociaux</h4>
+                        <div class="social-links-contact">
+                            <a href="https://www.facebook.com/share/1UqC4YAKZL/?mibextid=wwXIfr" class="social-link-contact" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mangomaange?igsh=NHo4NnZhNzYxZGMz&utm_source=qr" class="social-link-contact" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@angemangomaa" class="social-link-contact" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://github.com" class="social-link-contact" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" class="social-link-contact" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form fade-in-up">
+                    <h2>Envoyez un Message</h2>
+                    
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="_subject" value="Nouveau message depuis Portfolio L<i class='fas fa-moon'></i>una">
+                        
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le Message
+                        </button>
+                        
+                        <div style="text-align: center; margin-top: var(--spacing-lg);">
+                            <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">OU</p>
+                            <button type="button" class="submit-btn" onclick="sendToWhatsApp()" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                                <i class="fab fa-whatsapp"></i> Envoyer via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1UqC4YAKZL/?mibextid=wwXIfr" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mangomaange?igsh=NHo4NnZhNzYxZGMz&utm_source=qr" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@angemangomaa" class="social-link" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://github.com" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:lunangedange@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 L<i class="fas fa-moon"></i>una - Portfolio Développeur & Nature. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !subject || !message) {
+                alert('Veuillez remplir tous les champs avant d\'envoyer via WhatsApp.');
+                return;
+            }
+            
+            const whatsappMessage = `*Nouveau message de contact depuis le portfolio L<i class="fas fa-moon"></i>una*\n\n*Nom:* ${name}\n*Email:* ${email}\n*Sujet:* ${subject}\n\n*Message:*\n${message}`;
+            const whatsappUrl = `https://wa.me/243979294221?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
