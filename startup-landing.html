@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Digital Agency - Développement Web & Solutions Digitales</title>
+    <meta name="description" content="Luna Digital Agency - Agence de développement web spécialisée en solutions digitales pour PME et startups en RD Congo. Sites web, applications, systèmes de gestion.">
+    <meta name="keywords" content="agence web, développement site, RD Congo, Kinshasa, PME, startup, application web">
+    <meta name="author" content="Luna Digital Agency">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Luna Digital Agency - Solutions Web Innovantes">
+    <meta property="og:description" content="Agence de développement web spécialisée pour entreprises africaines">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lunadigitalagency.netlify.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.jpeg">
+    
+    <!-- Fonts et Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    
+    <style>
+        .startup-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .startup-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #e94560, #f47068);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .startup-hero .tagline {
+            font-size: 1.3rem;
+            color: var(--moon-silver);
+            margin-bottom: 40px;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .pricing-card {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--gray-200);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--moon-gold);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.featured::before {
+            content: "POPULAIRE";
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--moon-gold);
+            color: var(--white);
+            padding: 5px 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transform: rotate(45deg);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            color: var(--moon-gold);
+            margin-bottom: 10px;
+        }
+        
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin-bottom: 20px;
+        }
+        
+        .pricing-card .price span {
+            font-size: 1rem;
+            color: var(--gray-600);
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray-200);
+            color: var(--gray-700);
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features li i {
+            color: var(--moon-gold);
+            margin-right: 10px;
+        }
+        
+        .cta-section {
+            background: var(--gray-50);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+        
+        .stats-section {
+            background: var(--dark-bg);
+            padding: var(--spacing-xl) 0;
+            color: var(--white);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-xl);
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--moon-gold);
+            margin-bottom: 10px;
+        }
+        
+        .process-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        
+        .process-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+        
+        .process-item .icon {
+            font-size: 3rem;
+            color: var(--moon-gold);
+            margin-bottom: 20px;
+        }
+        
+        .testimonials {
+            background: var(--gray-50);
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--moon-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/icon.jpeg" alt="L Icon" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                Luna Digital Agency
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Tarifs</a></li>
+                <li><a href="#process" class="nav-link">Processus</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Startup Hero Section -->
+    <section class="startup-hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="assets/images/collation.jpeg" alt="Luna Digital Agency" class="hero-avatar">
+                <h1>Luna Digital Agency</h1>
+                <p class="tagline">Solutions Web Innovantes pour Entreprises Africaines</p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Voir Nos Tarifs
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Nous Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">Chiffres Clés</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Années d'expérience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projets livrés</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Taux de satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nos Services</h2>
+            <p class="section-subtitle fade-in-up">Solutions digitales complètes pour votre entreprise</p>
+            
+            <div class="projects-grid fade-in-up">
+                <div class="project-card">
+                    <div class="project-symbol">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sites Web Professionnels</h3>
+                        <p>Sites web responsifs, modernes et optimisés pour le référencement. Design unique sur mesure.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-symbol">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Applications Web</h3>
+                        <p>Applications web sur mesure avec base de données, gestion utilisateur et tableaux de bord.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-symbol">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce</h3>
+                        <p>Boutiques en ligne complètes avec paiement sécurisé, gestion des stocks et suivi des commandes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WooCommerce</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">PayPal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-symbol">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Systèmes de Gestion</h3>
+                        <p>Solutions CRM, ERP et gestion de stock personnalisées pour optimiser vos processus.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dashboard</span>
+                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">Reports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nos Tarifs</h2>
+            <p class="section-subtitle fade-in-up">Solutions adaptées à tous les budgets</p>
+            
+            <div class="pricing-cards fade-in-up">
+                <div class="pricing-card">
+                    <h3>PACK STARTER</h3>
+                    <div class="price">300$ <span>- 800$</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Site web 5 pages</li>
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> Formulaire contact</li>
+                        <li><i class="fas fa-check"></i> Hébergement 1 mois</li>
+                        <li><i class="fas fa-check"></i> Support 30 jours</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>PACK BUSINESS</h3>
+                    <div class="price">800$ <span>- 2000$</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Site web 10-15 pages</li>
+                        <li><i class="fas fa-check"></i> Système de gestion</li>
+                        <li><i class="fas fa-check"></i> E-commerce inclus</li>
+                        <li><i class="fas fa-check"></i> SEO optimisé</li>
+                        <li><i class="fas fa-check"></i> Formation 3 mois</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>PACK ENTERPRISE</h3>
+                    <div class="price">2000$ <span>- 5000$</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Application complète</li>
+                        <li><i class="fas fa-check"></i> Base données personnalisée</li>
+                        <li><i class="fas fa-check"></i> API et intégrations</li>
+                        <li><i class="fas fa-check"></i> Maintenance annuelle</li>
+                        <li><i class="fas fa-check"></i> Support 24/7</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Notre Processus</h2>
+            <p class="section-subtitle fade-in-up">Méthodologie agile pour des résultats rapides</p>
+            
+            <div class="process-grid fade-in-up">
+                <div class="process-item">
+                    <div class="icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>1. Découverte</h3>
+                    <p>Analyse de vos besoins et définition des objectifs</p>
+                </div>
+                
+                <div class="process-item">
+                    <div class="icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>2. Design</h3>
+                    <p>Création de maquettes et validation du design</p>
+                </div>
+                
+                <div class="process-item">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>3. Développement</h3>
+                    <p>Codage agile avec livraisons régulières</p>
+                </div>
+                
+                <div class="process-item">
+                    <div class="icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>4. Lancement</h3>
+                    <p>Déploiement et suivi post-lancement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Témoignages Clients</h2>
+            <p class="section-subtitle fade-in-up">Ce que nos clients disent de nous</p>
+            
+            <div class="testimonial-grid fade-in-up">
+                <div class="testimonial-card">
+                    <p>"Luna Digital Agency a transformé notre boutique en ligne. Le design est magnifique et les ventes ont augmenté de 300%!"</p>
+                    <div class="author">- Jean-Pierre M., Boutique Kinshasa</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"Le système de gestion développé par Luna a révolutionné notre façon de travailler. Plus efficace et plus simple."</p>
+                    <div class="author">- Marie L., Restaurant Le Gourmet</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"Un service exceptionnel et des résultats dépassant nos attentes. Je recommande vivement Luna Digital Agency!"</p>
+                    <div class="author">- Thomas K., Startup Tech</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Prêt à Transformer Votre Présence Digitale?</h2>
+            <p class="section-subtitle fade-in-up">Contactez-nous dès aujourd'hui pour une consultation gratuite</p>
+            <div class="hero-cta fade-in-up">
+                <a href="tel:+243979294221" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    +243 979 294 221
+                </a>
+                <a href="mailto:lunangedange@gmail.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    lunangedange@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1UqC4YAKZL/?mibextid=wwXIfr" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mangomaange?igsh=NHo4NnZhNzYxZGMz&utm_source=qr" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@angemangomaa" class="social-link" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://github.com" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:lunangedange@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Luna Digital Agency - Solutions Web Innovantes. Tous droits réservés.</p>
+            <p style="margin-top: var(--spacing-sm); opacity: 0.8; font-size: 0.9rem;">
+                Kinshasa, RD Congo | Développé avec <i class="fas fa-heart" style="color: var(--accent-red);"></i> et ambition entrepreneuriale
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
